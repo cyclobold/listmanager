@@ -1,0 +1,4 @@
+1. Add image to the sky button trigger
+2. Change the text when buttons are clicked
+3. Add more color themes
+4. Make the button larger when the theme is active
