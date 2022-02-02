@@ -52,7 +52,7 @@ addBtn.onclick = function(){
 
     if(noteItemValue.length > 0){
         //the user entered data
-        noteInfo.innerHTML = "<div class='alert alert-success'>Item added</div>";
+        noteInfo.innerHTML = "<div class='alert alert-success'>Item added ✔︎</div>";
         
         para.innerText = "";
 
@@ -73,8 +73,13 @@ function deleteItem(event){
     event.target.parentNode.parentNode.remove();
 
     //Item removed
+    noteInfo.innerHTML = `<div class='alert alert-danger border-0'>Item removed ✘ 😎</div>`
 
     //check the total number of children 
+    if(unorderedList.children.length == 0){
+        para.innerText = `You have no note the moment`;
+    }
+
 
 }
 
